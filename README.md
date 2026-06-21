@@ -17,7 +17,7 @@ sort used in telecom infrastructure. I'd use rsyslog logging if I could, but
 CWMP appears to be the gateway's supported happy path logging option. So, I'll
 go with the flow and use CWMP.
 
-CWMP was developed to manage large fleets of CPE (Customer Premises Equipment)
+CWMP was developed to manage large fleets of Customer Premises Equipment (CPE)
 distributed over wide area networks. A typical ACS might be part of an ISP or
 telco billing or admin system with perhaps hundreds or thousands of devices.
 All I need is to download logs from one device on a private LAN. GenieACS might
