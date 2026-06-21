@@ -8,6 +8,19 @@ better visibility into ocassional connectivity glitches between the gateway and
 its LoRaWAN Network Server (LNS).
 
 
+## Context: Local First LoRaWAN
+
+This might make more sense if you understand that it's part of a larger goal of
+making it easier to do wireless sensor deployments for small scale agriculture
+and horticulture.
+
+I'm interested in adapting wireless sensing tech developed for large-scale
+corporate networks to be useful at a smaller scale with different assumptions
+about infrastructure availability. That means planning for things like how to
+keep the sensor monitoring system running when grid power and WAN links are
+interrupted (local-first hosting).
+
+
 ## Why DIY CWMP?
 
 The Sentrius RG1xx LoRaWAN gateway has a great RF path, so it's nice to use as
@@ -45,6 +58,11 @@ Why? Because...
 
 4. Nginx makes it easy to reconfigure network interface bindings, URIs,
    authentication, or TLS without having to edit code.
+
+5. There's no point in over-engineering a debugging tool
+   it.
+A modest solution for a modest
+   need is fine here.
 
 
 ## Debian Setup
