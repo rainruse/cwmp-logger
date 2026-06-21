@@ -131,7 +131,7 @@ script:
    the POST body you captured earlier with socat:
    ```
    $ curl -X POST http://$DEBIAN_BOX_IP/acs \
-     -H 'Content-Type: text/xml; charset="utf-8"' \
+     -H 'Content-Type: text/xml; charset=utf-8' \
      --data-binary @testsoap.xml
    ```
 
