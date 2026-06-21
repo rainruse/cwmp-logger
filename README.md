@@ -113,4 +113,4 @@ Using test data from a file when working on the acs.pl script:
    ```
 
 To test the acs.pl script against the real gateway, just use the gateway's web
-GUI to point Remote Monitoring Service ACS URL at point 80 (vs 8000 for socat).
+GUI to point Remote Monitoring Service ACS URL at port 80 (vs 8000 for socat).
