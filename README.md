@@ -86,14 +86,15 @@ Why? Because...
    sudo chmod g+s /var/www/html
    ```
 
-3. Copy the acs.pl perl script to /var/www/html/
+3. Copy the [acs.pl](var/www/html/acs.pl) perl script to /var/www/html/
    ```
    cd ~
    git clone https://github.com/rainruse/cwmp-logger.git
    cp cwmp-logger/var/www/html/acs.pl /var/www/html/
    ```
 
-4. Copy the nginx site file file to /etc/nginx/sites-available/
+4. Copy the nginx [site file](etc/nginx/sites-available/my_site) to
+   /etc/nginx/sites-available/
    ```
    cd ~/cwmp-logger
    sudo cp etc/nginx/sites-available/my_site /etc/nginx/sites-available/
