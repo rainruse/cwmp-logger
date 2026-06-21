@@ -149,6 +149,6 @@ For now, `acs.pl` writes all the HTTP POST bodies it sees to the temporary file
 flow between the CPE (RG1xx gateway) and the ACS (debian box). You can see the
 HTTP bodies by tailing `/tmp/fcgi.log`:
 
-``
+```
 tail -n 1000 -f /tmp/fcgi.log
 ```
