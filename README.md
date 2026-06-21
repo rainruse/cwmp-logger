@@ -56,9 +56,8 @@ Why? Because...
 2. Configure directory permissions for editing `/var/www/*` with a normal user
    account. The ownership and permissions start as root:root 755. To make it
    work reasonably, we need to add a `wwwedit` group with write permissions,
-   change directories to root:wwwedit 775, and recursively set the sgid bit on
-   directories so that ownership propagates as files and subdirectories are
-   created:
+   change directories to root:wwwedit 775, and set the directory sgid bits so
+   that ownership propagates as files and subdirectories are created:
    ```
    sudo groupadd wwwedit
    sudo usermod -aG wwwedit $USER
