@@ -130,7 +130,7 @@ script:
 3. Test the perl + fcgiwrap + nginx setup by making a POST with `curl` using
    the POST body you captured earlier with socat:
    ```
-   $ curl -X POST http://$DEBIAN_BOX_IP/acs \
+   curl -X POST http://$DEBIAN_BOX_IP/acs \
      -H 'Content-Type: text/xml; charset=utf-8' \
      --data-binary @testsoap.xml
    ```
