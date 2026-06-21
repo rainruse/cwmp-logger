@@ -50,8 +50,8 @@ Why? Because...
 2. CWMP is an older protocol built on SOAP (XML) RPC. Using an older tech stack
    fits. Perl's `XML::LibXML` module has a high-level API that makes it easy to
    extract values from XML documents using XPath style query strings. Modern
-   frameworks and libraries tend to prefer modern serialization formats like
-   JSON or protobuf.
+   frameworks and libraries tend to focus more on modern serialization formats
+   like JSON or protobuf.
 
 3. It's easy to get nginx + fcgiwrap working on Debian and easy to keep them
    current with security updates. No need to worry about getting infected with
