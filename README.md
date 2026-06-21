@@ -132,3 +132,23 @@ Using test data from a file when working on the acs.pl script:
 
 To test the acs.pl script against the real gateway, just use the gateway's web
 GUI to point Remote Monitoring Service ACS URL at port 80 (vs 8000 for socat).
+
+
+## Watching Logs
+
+Errors raised by the perl script get passed by fcgiwrap to nginx. You can view
+them by tailing `/var/log/nginx/error.log`. If you get a 50x gateway error from
+nginx, check the error log:
+
+```
+sudo tail -f /var/log/nginx/error.log
+```
+
+For now, `acs.pl` writes all the HTTP POST bodies it sees to the temporary file
+`/tmp/fcgi.log`. I'm currently using this to trace the CWMP protocol message
+flow between the CPE (RG1xx gateway) and the ACS (debian box). You can see the
+HTTP bodies by tailing `/tmp/fcgi.log`:
+
+``
+tail -n 1000 -f /tmp/fcgi.log
+```
