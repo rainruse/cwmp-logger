@@ -111,7 +111,8 @@ Why? Because...
 
 ## Testing the ACS
 
-Using test data from a file when working on the acs.pl script:
+Using test data from a file when working on the [acs.pl](var/www/html/acs.pl)
+script:
 
 1. Use RG1xx gateway's web admin GUI to set "Remote Management Service" ACS URL
    to point at port 8000 on the debian box.
