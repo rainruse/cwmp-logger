@@ -28,7 +28,7 @@ making my own thing.
 ## Why Perl + FastCGI + Nginx?
 
 Instead of approaching this from the typical modern REST server perspective,
-I'm using a retro (necro?) stack based on Perl FastCGI.
+I'm using a retro stack based on Perl FastCGI.
 
 Why? Because...
 
