@@ -97,14 +97,16 @@ Why? Because...
    /etc/nginx/sites-available/
    ```
    cd ~/cwmp-logger
-   sudo cp etc/nginx/sites-available/my_site /etc/nginx/sites-available/
+   sudo cp etc/nginx/sites-available/my_site \
+     /etc/nginx/sites-available/
    ```
 
 6. Enable new site file and disable the default site file
    ```
-   sudo ln -s /etc/nginx/sites-available/my_site /etc/nginx/sites-enabled/my_site
+   sudo ln -s /etc/nginx/sites-available/my_site \
+     /etc/nginx/sites-enabled/my_site
    sudo rm /etc/nginx/sites-enabled/default
-   sudo nginx -t                # validate config before loading it
+   sudo nginx -t        # validate config before loading it
    sudo systemctl reload nginx
    ```
 
@@ -129,7 +131,8 @@ script:
    the POST body you captured earlier with socat:
    ```
    $ curl -X POST http://$DEBIAN_BOX_IP/acs \
-     -H 'Content-Type: text/xml; charset="utf-8"' --data-binary @testsoap.xml
+     -H 'Content-Type: text/xml; charset="utf-8"' \
+     --data-binary @testsoap.xml
    ```
 
 To test the acs.pl script against the real gateway, just use the gateway's web
