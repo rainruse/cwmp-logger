@@ -1,9 +1,11 @@
 # cwmp-logger
 
 This is a minimal Auto Configuration Server (ACS) to fetch logs from a CWMP
-managed device. In particular, I'm building this to monitor an Ezurio Sentrius
-RG1xx LoRaWAN gateway. I want better visibility into connectivity glitches
-between the gateway and its LNS (LoRaWAN Network Server).
+managed device.
+
+I'm building this to monitor an Ezurio Sentrius RG1xx LoRaWAN gateway for
+better visibility into ocassional connectivity glitches between the gateway and
+its LoRaWAN Network Server (LNS).
 
 
 ## Why DIY CWMP?
