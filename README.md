@@ -4,7 +4,7 @@ This is a minimal Auto Configuration Server (ACS) to fetch logs from a CWMP
 managed device.
 
 I'm building this to monitor an Ezurio Sentrius RG1xx LoRaWAN gateway for
-better visibility into ocassional connectivity glitches between the gateway and
+better visibility into occasional connectivity glitches between the gateway and
 its LoRaWAN Network Server (LNS).
 
 
@@ -59,10 +59,8 @@ Why? Because...
 4. Nginx makes it easy to reconfigure network interface bindings, URIs,
    authentication, or TLS without having to edit code.
 
-5. There's no point in over-engineering a debugging tool
-   it.
-A modest solution for a modest
-   need is fine here.
+5. There's no point in over-engineering a debugging tool that will be used with
+   one gateway on a private LAN. A modest incomplete solution is fine here.
 
 
 ## Debian Setup
