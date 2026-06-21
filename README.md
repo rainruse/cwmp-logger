@@ -40,7 +40,7 @@ Why? Because...
    frameworks and libraries tend to prefer JSON, protobuf, etc.
 
 3. It's easy to get nginx + fcgiwrap working on Debian and easy to keep them
-   current with security updates. No need to worry about npm security issues.
+   current with security updates. No need to worry about npm or PyPi malware.
 
 4. Nginx makes it easy to reconfigure network interface bindings, URIs,
    authentication, or TLS without having to edit code.
