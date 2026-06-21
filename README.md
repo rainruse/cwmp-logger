@@ -35,7 +35,7 @@ Why? Because...
 1. High retro nostalgia entertainment value.
 
 2. CWMP is an older protocol built on SOAP (XML) RPC. Using an older tech stack
-   fits. Perl's XML::LibXML module has a high-level API that makes it easy to
+   fits. Perl's `XML::LibXML` module has a high-level API that makes it easy to
    extract values from XML documents using XPath style query strings. Modern
    frameworks and libraries tend to prefer JSON, protobuf, etc.
 
@@ -56,7 +56,7 @@ Why? Because...
 2. Configure directory permissions for editing `/var/www/*` with a normal user
    account. The ownership and permissions start as root:root 755. To make it
    work reasonably, we need to add a `wwwedit` group with write permissions,
-   change directories to root:wwwedit 755, and recursively set the sgid bit on
+   change directories to root:wwwedit 775, and recursively set the sgid bit on
    directories so that ownership propagates as files and subdirectories are
    created:
    ```
